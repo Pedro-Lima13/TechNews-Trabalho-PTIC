@@ -437,7 +437,7 @@ h3 {
   margin-top: 24px;
   padding: 28px 0;
   color: #dbe5f4;
-  background: var(--navy);
+  background: #0b1b36;
 }
 .footer-line {
   display: flex;
@@ -455,8 +455,26 @@ h3 {
 .footer-contact {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px; 
 }
+
+.footer-contact-label {
+  color: #b8c8dc; 
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-right: 4px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+
+a.footer-contact-label:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .footer-icon {
   width: 34px;
   height: 34px;
