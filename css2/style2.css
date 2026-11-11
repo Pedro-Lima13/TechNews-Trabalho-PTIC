@@ -62,12 +62,19 @@ a:hover {
 .tool-icon {
   width: 36px;
   height: 36px;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--line);
   border-radius: 50%;
 }
+
+.mobile-nav-bar {
+  display: none;
+}
+
+
+
 .menu-mark {
   width: 36px !important;
   height: 36px !important;
@@ -507,27 +514,63 @@ a.footer-contact-label:hover {
     min-width: 0;
     flex: 1;
   }
-  .main-nav .nav-list {
-
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: flex-start !important;
-    overflow-x: auto !important;
-    white-space: nowrap !important;
-    width: 100% !important;
-
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; 
+  .mobile-nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: #fff;
   }
-  .main-nav .nav-list::-webkit-scrollbar {
-    display: none; 
+  .mobile-menu-title {
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+  .burger-btn {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+    color: #fff;
+    margin: 0;
+  }
+  .burger-btn:hover {
+    background: var(--blue);
+  }
+  .burger-btn .icon-close {
+    display: none;
+  }
+  .menu-toggle-input:checked ~ .mobile-nav-bar .icon-open {
+    display: none;
+  }
+  .menu-toggle-input:checked ~ .mobile-nav-bar .icon-close {
+    display: block;
+  }
+  .main-nav .nav-list {
+    display: none !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    padding-bottom: 10px;
+    overflow-x: visible !important;
+    white-space: normal !important;
+  }
+  .menu-toggle-input:checked ~ .nav-list {
+    display: flex !important;
   }
   .main-nav a {
-
-    min-width: max-content !important;
-    display: block !important;
+    text-align: left;
+    border-right: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 12px 4px;
+    width: 100%;
+  }
+  .main-nav li:first-child a {
+    border-left: none;
   }
 }
+
 
 
 @media (max-width: 575.98px) {

@@ -19,12 +19,36 @@
     <header class="site-header">
       <div class="container utility-row">
         <div class="header-tools">
-         <span class="tool-icon menu-mark"><svg xmlns="http://w3.org" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/></svg></span>
-<span class="tool-icon" aria-label="Notificações">
-  <svg xmlns="http://w3.org" width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.079.033a2.86 2.86 0 0 0-.572.234c-.727.376-1.153.905-1.153 1.599v1.398h-.088c-1.394 0-2.518 1.116-2.518 2.493v4.478c0 .229-.289.431-.788.583C2.33 12.83 2 13 2 13h12s-.33-.17-.813-.319c-.499-.152-.788-.354-.788-.583V7.675c0-1.377-1.124-2.493-2.518-2.493h-.088V3.551c0-.694-.426-1.223-1.153-1.6a2.86 2.86 0 0 0-.572-.234z"/></svg>
-</span>
-<span class="tool-icon">i</span>
+          <span class="tool-icon menu-mark d-none d-lg-inline-flex">
+            <svg
+              xmlns="http://w3.org"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </span>
+          <span class="tool-icon" aria-label="Notificações">
+            <svg
+              xmlns="http://w3.org"
+              width="15"
+              height="15"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.079.033a2.86 2.86 0 0 0-.572.234c-.727.376-1.153.905-1.153 1.599v1.398h-.088c-1.394 0-2.518 1.116-2.518 2.493v4.478c0 .229-.289.431-.788.583C2.33 12.83 2 13 2 13h12s-.33-.17-.813-.319c-.499-.152-.788-.354-.788-.583V7.675c0-1.377-1.124-2.493-2.518-2.493h-.088V3.551c0-.694-.426-1.223-1.153-1.6a2.86 2.86 0 0 0-.572-.234z"
+              />
+            </svg>
+          </span>
+          <span class="tool-icon">i</span>
         </div>
+
         <div class="brand">
           <a href="index.html" class="text-decoration-none text-reset">
             <p class="brand-name">
@@ -34,32 +58,76 @@
           </a>
         </div>
 
-        <label class="search-box"
-          ><span>⌕</span><input type="search" placeholder="Pesquisar"
-        /></label>
+        <label class="search-box">
+          <span>⌕</span><input type="search" placeholder="Pesquisar" />
+        </label>
       </div>
 
       <nav class="main-nav w-100" aria-label="Navegação principal">
-        <div class="container">
-          <ul class="nav-list d-flex justify-content-lg-center w-100 m-0 p-0">
-            <li><a class="active" href="aplicacoes1.html">Aplicação das IAs no Trabalho</a></li>
+        <div class="container nav-wrapper">
+          <input type="checkbox" id="menu-toggle" class="menu-toggle-input" />
+
+          <div class="mobile-nav-bar d-lg-none">
+            <span class="mobile-menu-title">Páginas</span>
+            <label
+              for="menu-toggle"
+              class="burger-btn"
+              aria-label="Abrir ou fechar menu"
+            >
+              <svg
+                class="icon-open"
+                xmlns="http://w3.org"
+                width="26"
+                height="26"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"
+                />
+              </svg>
+              <svg
+                class="icon-close"
+                xmlns="http://w3.org"
+                width="26"
+                height="26"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+            </label>
+          </div>
+
+          <ul class="nav-list">
+            <li>
+              <a class="active" href="aplicacoes1.html"
+                >Aplicação das IAs no Trabalho</a
+              >
+            </li>
             <li><a href="impactos1.html">Impactos da IA</a></li>
-            <li><a href="projetos1.html">IA no Desenvolvimento de Projetos</a></li>
+            <li>
+              <a href="projetos1.html">IA no Desenvolvimento de Projetos</a>
+            </li>
             <li><a href="como-usar1.html">Como Você Mesmo Pode Usar</a></li>
           </ul>
         </div>
       </nav>
-
-
     </header>
+
     <main>
       <section class="page-intro">
         <div class="container">
           <div class="eyebrow">01 / Aplicação</div>
           <h1>Aplicação das IAs na área trabalhista</h1>
           <p class="lead">
-           A inteligência artificial vem ganhando grande abrangência nas áreas de educação e de trabalho, 
-           por isso grande parte dos profissionais que a utilizam com intenções trabalhistas devem saber suas aplicações em seus próprios ambientes de profissionalização
+            A inteligência artificial vem ganhando grande abrangência nas áreas
+            de educação e de trabalho, por isso grande parte dos profissionais
+            que a utilizam com intenções trabalhistas devem saber suas
+            aplicações em seus próprios ambientes de profissionalização
           </p>
         </div>
       </section>
@@ -77,25 +145,29 @@
             <div class="col-lg-6 copy">
               <h2>Como administrar a IA</h2>
               <p>
-                A administração da inteligência artificial no ambiente de trabalho exige 
-                o estabelecimento de diretrizes claras de governança e ética antes mesmo 
-                da adoção de novas ferramentas. Os gestores devem definir quais plataformas 
-                são seguras para uso corporativo, criando políticas rigorosas sobre privacidade 
-                de dados e propriedade intelectual para evitar o vazamento de informações confidenciais. 
-                Além disso, é fundamental instituir uma supervisão humana contínua sobre os resultados 
-                gerados pelos algoritmos, garantindo que a tecnologia atue como uma ferramenta de apoio
-                 à decisão e não como uma substituta irrefletida do julgamento crítico da equipe.
+                A administração da inteligência artificial no ambiente de
+                trabalho exige o estabelecimento de diretrizes claras de
+                governança e ética antes mesmo da adoção de novas ferramentas.
+                Os gestores devem definir quais plataformas são seguras para uso
+                corporativo, criando políticas rigorosas sobre privacidade de
+                dados e propriedade intelectual para evitar o vazamento de
+                informações confidenciais. Além disso, é fundamental instituir
+                uma supervisão humana contínua sobre os resultados gerados pelos
+                algoritmos, garantindo que a tecnologia atue como uma ferramenta
+                de apoio à decisão e não como uma substituta irrefletida do
+                julgamento crítico da equipe.
               </p>
               <p>
-                  Paralelamente às regras de controle, o sucesso da gestão de IA depende
-                   diretamente da capacitação constante dos colaboradores e da adaptação
-                    da cultura organizacional. As empresas precisam investir em 
-                    treinamentos práticos para ensinar os funcionários a formular 
-                    comandos eficientes, avaliar a precisão das respostas e integrar
-                     a automação em suas rotinas diárias. Ao promover um ambiente de 
-                     aprendizado aberto e transparente, a liderança reduz o receio de 
-                     substituição profissional, estimula a inovação e direciona o tempo 
-                     economizado pelas máquinas para atividades estratégicas e criativas.
+                Paralelamente às regras de controle, o sucesso da gestão de IA
+                depende diretamente da capacitação constante dos colaboradores e
+                da adaptação da cultura organizacional. As empresas precisam
+                investir em treinamentos práticos para ensinar os funcionários a
+                formular comandos eficientes, avaliar a precisão das respostas e
+                integrar a automação em suas rotinas diárias. Ao promover um
+                ambiente de aprendizado aberto e transparente, a liderança reduz
+                o receio de substituição profissional, estimula a inovação e
+                direciona o tempo economizado pelas máquinas para atividades
+                estratégicas e criativas.
               </p>
               <ul class="topic-list">
                 <li>
@@ -104,18 +176,21 @@
                   organização.
                 </li>
                 <li>
-                  <strong>Uso:</strong> Começa por
-                  tarefas bem delimitadas e termina com revisão humana.
+                  <strong>Uso:</strong> Começa por tarefas bem delimitadas e
+                  termina com revisão humana.
                 </li>
                 <li>
                   <strong>Responsabilidade:</strong> dados pessoais, informações
-                  estratégicas e decisões sensíveis exigem pensamento humano e nao devem ser compartilhados.
+                  estratégicas e decisões sensíveis exigem pensamento humano e
+                  nao devem ser compartilhados.
                 </li>
               </ul>
             </div>
           </div>
           <div class="news-strip">
-            <div class="eyebrow">Dados e fontes que apresentam a aplicação da IA : </div>
+            <div class="eyebrow">
+              Dados e fontes que apresentam a aplicação da IA :
+            </div>
             <div class="news-item">
               <h3>
                 Um em cada quatro trabalhadores está em ocupação com algum grau
@@ -155,18 +230,18 @@
         </div>
       </section>
     </main>
-<footer class="site-footer">
-  <div class="container footer-line">
-    <div>
-      <div class="footer-brand"><span>Tech</span>News</div>
-      <p class="footer-copy">Tudo Sobre Tecnologia · 2026</p>
-    </div>
-    <div class="footer-contact">
-      <span class="footer-contact-label">Nos contate</span>
-      <span class="footer-icon">☎</span>
-      <span class="footer-icon">◉</span>
-    </div>
-  </div>
-</footer>
+    <footer class="site-footer">
+      <div class="container footer-line">
+        <div>
+          <div class="footer-brand"><span>Tech</span>News</div>
+          <p class="footer-copy">Tudo Sobre Tecnologia · 2026</p>
+        </div>
+        <div class="footer-contact">
+          <span class="footer-contact-label">Nos contate</span>
+          <span class="footer-icon">☎</span>
+          <span class="footer-icon">◉</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

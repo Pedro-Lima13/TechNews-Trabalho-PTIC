@@ -19,8 +19,8 @@
     <header class="site-header">
       <div class="container utility-row">
         <div class="header-tools">
-          <span class="tool-icon menu-mark"
-            ><svg
+          <span class="tool-icon menu-mark d-none d-lg-inline-flex">
+            <svg
               xmlns="http://w3.org"
               width="16"
               height="16"
@@ -30,8 +30,9 @@
               <path
                 fill-rule="evenodd"
                 d="M2.5 12a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"
-              /></svg
-          ></span>
+              />
+            </svg>
+          </span>
           <span class="tool-icon" aria-label="Notificações">
             <svg
               xmlns="http://w3.org"
@@ -47,22 +48,61 @@
           </span>
           <span class="tool-icon">i</span>
         </div>
+
         <div class="brand">
           <a href="index.html" class="text-decoration-none text-reset">
-            <p class="brand-name m-0">
+            <p class="brand-name">
               <span class="tech">Tech</span><span class="news">News</span>
             </p>
             <span class="brand-tagline">Tudo Sobre Tecnologia</span>
           </a>
         </div>
-        <label class="search-box" aria-label="Pesquisar no site">
-          <span aria-hidden="true">⌕</span>
-          <input type="search" placeholder="Pesquisar" />
+
+        <label class="search-box">
+          <span>⌕</span><input type="search" placeholder="Pesquisar" />
         </label>
       </div>
+
       <nav class="main-nav w-100" aria-label="Navegação principal">
-        <div class="container">
-          <ul class="nav-list d-flex justify-content-lg-center w-100 m-0 p-0">
+        <div class="container nav-wrapper">
+          <input type="checkbox" id="menu-toggle" class="menu-toggle-input" />
+
+          <div class="mobile-nav-bar d-lg-none">
+            <span class="mobile-menu-title">Páginas</span>
+            <label
+              for="menu-toggle"
+              class="burger-btn"
+              aria-label="Abrir ou fechar menu"
+            >
+              <svg
+                class="icon-open"
+                xmlns="http://w3.org"
+                width="26"
+                height="26"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"
+                />
+              </svg>
+              <svg
+                class="icon-close"
+                xmlns="http://w3.org"
+                width="26"
+                height="26"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+            </label>
+          </div>
+
+          <ul class="nav-list">
             <li>
               <a href="aplicacoes1.html">Aplicação das IAs no Trabalho</a>
             </li>
@@ -84,7 +124,7 @@
           <div class="eyebrow">03 / Projetos</div>
           <h1>IA no Desenvolvimento de Projetos</h1>
           <p class="lead">
-            Se usada da maneira correta a IA pode ser grande parte de seu 
+            Se usada da maneira correta a IA pode ser grande parte de seu
             projeto sem tirar da criatividade nem personalidade do trabalho
           </p>
         </div>
@@ -187,19 +227,18 @@
         </div>
       </section>
     </main>
-<footer class="site-footer">
-  <div class="container footer-line">
-    <div>
-      <div class="footer-brand"><span>Tech</span>News</div>
-      <p class="footer-copy">Tudo Sobre Tecnologia · 2026</p>
-    </div>
-    <div class="footer-contact">
-      <span class="footer-contact-label">Nos contate</span>
-      <span class="footer-icon">☎</span>
-      <span class="footer-icon">◉</span>
-    </div>
-  </div>
-</footer>
-
+    <footer class="site-footer">
+      <div class="container footer-line">
+        <div>
+          <div class="footer-brand"><span>Tech</span>News</div>
+          <p class="footer-copy">Tudo Sobre Tecnologia · 2026</p>
+        </div>
+        <div class="footer-contact">
+          <span class="footer-contact-label">Nos contate</span>
+          <span class="footer-icon">☎</span>
+          <span class="footer-icon">◉</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
